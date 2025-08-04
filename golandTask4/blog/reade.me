@@ -1,0 +1,24 @@
+
+
+├── cmd/                   # 项目入口目录
+│   └── main.go           # 主程序入口
+├── internal/             # 私有代码目录
+│   ├── handler/         # HTTP处理器(等同于Controller)
+│   │   └── user.go
+│   ├── service/         # 业务逻辑层
+│   │   └── user.go
+│   ├── repository/      # 数据访问层(等同于DAO)
+│   │   └── user.go
+│   └── model/          # 数据模型
+│       └── user.go
+├── pkg/                 # 可被外部引用的包
+│   ├── middleware/     # 中间件
+│   ├── config/        # 配置
+│   └── utils/         # 工具函数
+├── api/                # API文档(Swagger/OpenAPI)
+│   └── swagger.json
+├── configs/            # 配置文件目录
+│   └── config.yaml
+├── scripts/           # 构建、部署脚本
+├── test/             # 测试文件目录
+└── go.mod            # Go模块文件
